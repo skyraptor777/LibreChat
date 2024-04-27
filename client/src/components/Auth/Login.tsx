@@ -61,6 +61,17 @@ function Login() {
         id="github"
       />
     ),
+    okta: (
+      <SocialButton
+        key="okta"
+        enabled={startupConfig.githubLoginEnabled}
+        serverDomain={startupConfig.serverDomain}
+        oauthPath="github"
+        Icon={GithubIcon}
+        label={localize('com_auth_github_login')}
+        id="okta"
+      />
+    ),
     google: (
       <SocialButton
         key="google"
