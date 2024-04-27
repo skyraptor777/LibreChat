@@ -100,9 +100,5 @@
       "admin/",
       "packages/"
     ]
-  },
-  "dependencies": {
-    "librechat-data-provider": "^0.5.8",
-    "passport-okta-oauth": "^0.0.1"
   }
 }
