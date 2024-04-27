@@ -61,6 +61,7 @@ function Login() {
         id="github"
       />
     ),
+    /*
     okta: (
       <SocialButton
         key="okta"
@@ -72,6 +73,7 @@ function Login() {
         id="okta"
       />
     ),
+    */
     google: (
       <SocialButton
         key="google"
