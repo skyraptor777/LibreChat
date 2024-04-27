@@ -6,7 +6,6 @@ const {
   githubLogin,
   discordLogin,
   facebookLogin,
-  oktaLogin,
   setupOpenId,
 } = require('../strategies');
 const client = require('../cache/redis');
@@ -27,9 +26,6 @@ const configureSocialLogins = (app) => {
   }
   if (process.env.DISCORD_CLIENT_ID && process.env.DISCORD_CLIENT_SECRET) {
     passport.use(discordLogin());
-  }
-  if (process.env.OKTA_CLIENT_ID && process.env.OKTA_CLIENT_SECRET) {
-    passport.use(oktaLogin());
   }
   if (
     process.env.OPENID_CLIENT_ID &&
